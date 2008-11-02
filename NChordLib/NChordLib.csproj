@@ -30,11 +30,18 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChordFingerTable.cs" />
+    <Compile Include="ChordInstance.Maintenance.ReplicateStorage.cs" />
+    <Compile Include="ChordInstance.Storage.cs" />
+    <Compile Include="Storage.ChordPhysicalStore.cs" />
     <Compile Include="ChordServer.cs" />
     <Compile Include="ChordServer.Hash.cs" />
     <Compile Include="ChordInstance.cs" />
@@ -49,7 +56,10 @@
     <Compile Include="ChordInstance.Notify.cs" />
     <Compile Include="ChordInstance.Properties.cs" />
     <Compile Include="ChordNode.cs" />
+    <Compile Include="Storage.ChordStorageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage.FilePhysicalStore.cs" />
+    <Compile Include="Storage.MemoryPhysicalStore.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
