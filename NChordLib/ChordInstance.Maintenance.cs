@@ -45,7 +45,6 @@ namespace NChordLib
         private BackgroundWorker m_StabilizePredecessors = new BackgroundWorker();
         private BackgroundWorker m_UpdateFingerTable = new BackgroundWorker();
         private BackgroundWorker m_Rejoin = new BackgroundWorker();
-        private BackgroundWorker m_ReplicateStorage = new BackgroundWorker();
 
         /// <summary>
         /// Start the maintenance tasks to run as background worker threads.
@@ -67,10 +66,6 @@ namespace NChordLib
             m_Rejoin.DoWork += new DoWorkEventHandler(this.ReJoin);
             m_Rejoin.WorkerSupportsCancellation = true;
             m_Rejoin.RunWorkerAsync();
-
-            m_ReplicateStorage.DoWork += new DoWorkEventHandler(this.ReplicateStorage);
-            m_ReplicateStorage.WorkerSupportsCancellation = true;
-            m_ReplicateStorage.RunWorkerAsync();
         }
 
         /// <summary>

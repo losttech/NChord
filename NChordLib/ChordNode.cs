@@ -140,5 +140,14 @@ namespace NChordLib
         {
             return string.Format("{0}:{1} ({2})", this.Host, this.PortNumber.ToString(), this.ID.ToString("x10").ToUpper());
         }
+
+        /// <summary>
+        /// Get hash code.
+        /// </summary>
+        /// <returns>Hash code.</returns>
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
