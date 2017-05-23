@@ -1,11 +1,21 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChordLib", "NChordLib\NChordLib.csproj", "{EFE450D1-4007-41E4-99FD-EC47B062A4BB}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChord", "src\NChord.csproj", "{5ABFB7CF-690E-4DE5-B9D1-595929B674F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChordServer", "NChordServer\NChordServer.csproj", "{8F2303A7-448C-4F4B-BF2C-4393270CDA44}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{CA922FFD-C330-400B-812E-67CC46114375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordTopoMapSample", "ChordTopoMapSample\ChordTopoMapSample.csproj", "{7AC1DE06-D2E6-4448-8966-1047C9E15372}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChordServer", "Samples\NChordServer\NChordServer.csproj", "{8F2303A7-448C-4F4B-BF2C-4393270CDA44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordTopoMapSample", "Samples\ChordTopoMapSample\ChordTopoMapSample.csproj", "{7AC1DE06-D2E6-4448-8966-1047C9E15372}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repo", "Repo", "{35418F25-41E8-41E5-A40E-4F709689E3C3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		readme.txt = readme.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +23,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EFE450D1-4007-41E4-99FD-EC47B062A4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFE450D1-4007-41E4-99FD-EC47B062A4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFE450D1-4007-41E4-99FD-EC47B062A4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFE450D1-4007-41E4-99FD-EC47B062A4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABFB7CF-690E-4DE5-B9D1-595929B674F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABFB7CF-690E-4DE5-B9D1-595929B674F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABFB7CF-690E-4DE5-B9D1-595929B674F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABFB7CF-690E-4DE5-B9D1-595929B674F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F2303A7-448C-4F4B-BF2C-4393270CDA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F2303A7-448C-4F4B-BF2C-4393270CDA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F2303A7-448C-4F4B-BF2C-4393270CDA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -28,5 +38,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F2303A7-448C-4F4B-BF2C-4393270CDA44} = {CA922FFD-C330-400B-812E-67CC46114375}
+		{7AC1DE06-D2E6-4448-8966-1047C9E15372} = {CA922FFD-C330-400B-812E-67CC46114375}
 	EndGlobalSection
 EndGlobal
